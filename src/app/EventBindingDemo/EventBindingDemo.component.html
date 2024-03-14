@@ -1,0 +1,12 @@
+
+<div>
+  <button (click)="onButtonClick()">Click me</button>
+  <p *ngIf="buttonClicked">Button clicked!</p>
+
+  <!-- Dynamic list rendering using ngFor -->
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+
+</div>
+

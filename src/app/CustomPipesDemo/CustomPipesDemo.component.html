@@ -1,0 +1,9 @@
+<div>
+  <h2>Filtered Items:</h2>
+<ul>
+  <li *ngFor="let item of items | customPipe: 'category' : 'Electronics'">
+    {{ item.name }} - {{ item.category }}
+  </li>
+</ul>
+</div>
+

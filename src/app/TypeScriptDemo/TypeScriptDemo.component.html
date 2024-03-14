@@ -1,0 +1,27 @@
+<!-- TypeScriptDemo.component.html -->
+
+<div>
+  <h2>List of Items:</h2>
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+
+  <h2>Select an Option:</h2>
+  <select [(ngModel)]="selectedOption">
+    <option value="default" disabled>Select an option</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <button (click)="handleSelection(selectedOption)">Submit Selection</button>
+
+  <h2>Control Statements:</h2>
+  <p *ngIf="isButtonDisabled">The button is disabled.</p>
+
+  <button (click)="toggleButton()">Toggle Button</button>
+
+  <h2>Function Example:</h2>
+  <button (click)="showMessage('Hello from function!')">Show Message</button>
+</div>
+
